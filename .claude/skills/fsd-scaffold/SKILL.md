@@ -49,11 +49,11 @@ Create only what is needed for the current task. Always create `index.ts` to exp
 
 **Before creating any file, read the relevant convention file:**
 
-| File being created | Convention file to read |
-|---|---|
-| `api/service.ts`, `api/query.ts`, `api/actions.ts` | [api.md](api.md) |
-| `model/dto.ts` | [model.md](model.md) |
-| `test/*.test.ts(x)` | [test.md](test.md) |
+| File being created                                 | Convention file to read |
+| -------------------------------------------------- | ----------------------- |
+| `api/service.ts`, `api/query.ts`, `api/actions.ts` | [api.md](api.md)        |
+| `model/dto.ts`                                     | [model.md](model.md)    |
+| `test/*.test.ts(x)`                                | [test.md](test.md)      |
 
 ### 5. Implement the requested code
 
