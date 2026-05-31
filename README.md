@@ -9,7 +9,59 @@ A personal collection of Claude Code skills, subagents, and commands.
 
 ---
 
+## Plugins
+
+Installed via `/plugin install` — loaded through Claude Code's plugin system, not as files.
+
+| Plugin | Marketplace | Description |
+|--------|-------------|-------------|
+| `superpowers` | `claude-plugins-official` | Process skills for brainstorming, debugging, TDD, code review, plan writing, git worktrees, and more |
+| `vercel` | `claude-plugins-official` | Vercel deployment, environment variables, Next.js, AI SDK, shadcn, and infrastructure skills |
+| `skill-creator` | `claude-plugins-official` | Create, improve, and benchmark Claude Code skills |
+| `code-review` | `claude-code-plugins` | Code review with inline PR comments and auto-fix |
+| `firebase` | `firebase` | Firebase skills — Firestore, Auth, Hosting, App Hosting, Security Rules, Genkit |
+
+---
+
 ## Skills
+
+### gstack (Global)
+
+Skills from [`garrytan/gstack`](https://github.com/garrytan/gstack), installed globally at `~/.claude/skills/`. Available across all projects on this machine.
+
+| Skill | Description |
+|-------|-------------|
+| `autoplan` | Auto-generate a plan before starting work |
+| `benchmark` / `benchmark-models` | Benchmark and compare model outputs |
+| `browse` / `scrape` | Browse and scrape web content |
+| `canary` | Canary deployment workflows |
+| `careful` | Extra-cautious mode for risky operations |
+| `codex` | Codex integration workflows |
+| `connect-chrome` / `open-gstack-browser` | Connect to and control a Chrome browser |
+| `context-save` / `context-restore` | Save and restore session context |
+| `cso` | CSO-level review and strategy |
+| `design-consultation` / `design-html` / `design-review` / `design-shotgun` | Design review and HTML generation workflows |
+| `devex-review` | Developer experience review |
+| `document-release` | Generate release documentation |
+| `freeze` / `unfreeze` | Freeze and unfreeze project state |
+| `gstack` / `gstack-upgrade` | Core gstack skill and upgrade workflow |
+| `guard` | Guard against unsafe operations |
+| `health` | Project health check |
+| `investigate` | Deep investigation workflow |
+| `land-and-deploy` | Land a PR and trigger deployment |
+| `landing-report` | Generate a landing/deployment report |
+| `learn` | Learn from the codebase |
+| `make-pdf` | Generate PDF documents |
+| `office-hours` | Office hours Q&A workflow |
+| `pair-agent` | Spawn a paired agent for collaboration |
+| `plan-ceo-review` / `plan-design-review` / `plan-devex-review` / `plan-eng-review` / `plan-tune` | Plan review workflows by role |
+| `qa` / `qa-only` | QA and testing workflows |
+| `retro` | Sprint retrospective workflow |
+| `review` | Code review workflow |
+| `setup-browser-cookies` / `setup-deploy` / `setup-gbrain` | Setup and configuration workflows |
+| `ship` | Ship a feature end-to-end |
+| `skillify` | Convert a workflow into a reusable skill |
+| `sync-gbrain` | Sync with gbrain knowledge base |
 
 ### Vercel
 
@@ -54,44 +106,6 @@ Skills from [`langchain-ai/langchain-skills`](https://github.com/langchain-ai/la
 | `deep-agents-orchestration` | `SubAgentMiddleware`, `TodoList` for planning, human-in-the-loop interrupts |
 | `managed-deep-agents` | LangSmith `/v1/deepagents` REST API — agent → MCP server → thread → streamed run flow |
 | `swarm` | Dispatch many independent items in parallel — fan out to subagents, aggregate results |
-
-### gstack (Global)
-
-Skills from [`garrytan/gstack`](https://github.com/garrytan/gstack), installed globally at `~/.claude/skills/`. Available across all projects on this machine.
-
-| Skill | Description |
-|-------|-------------|
-| `autoplan` | Auto-generate a plan before starting work |
-| `benchmark` / `benchmark-models` | Benchmark and compare model outputs |
-| `browse` / `scrape` | Browse and scrape web content |
-| `canary` | Canary deployment workflows |
-| `careful` | Extra-cautious mode for risky operations |
-| `codex` | Codex integration workflows |
-| `connect-chrome` / `open-gstack-browser` | Connect to and control a Chrome browser |
-| `context-save` / `context-restore` | Save and restore session context |
-| `cso` | CSO-level review and strategy |
-| `design-consultation` / `design-html` / `design-review` / `design-shotgun` | Design review and HTML generation workflows |
-| `devex-review` | Developer experience review |
-| `document-release` | Generate release documentation |
-| `freeze` / `unfreeze` | Freeze and unfreeze project state |
-| `gstack` / `gstack-upgrade` | Core gstack skill and upgrade workflow |
-| `guard` | Guard against unsafe operations |
-| `health` | Project health check |
-| `investigate` | Deep investigation workflow |
-| `land-and-deploy` | Land a PR and trigger deployment |
-| `landing-report` | Generate a landing/deployment report |
-| `learn` | Learn from the codebase |
-| `make-pdf` | Generate PDF documents |
-| `office-hours` | Office hours Q&A workflow |
-| `pair-agent` | Spawn a paired agent for collaboration |
-| `plan-ceo-review` / `plan-design-review` / `plan-devex-review` / `plan-eng-review` / `plan-tune` | Plan review workflows by role |
-| `qa` / `qa-only` | QA and testing workflows |
-| `retro` | Sprint retrospective workflow |
-| `review` | Code review workflow |
-| `setup-browser-cookies` / `setup-deploy` / `setup-gbrain` | Setup and configuration workflows |
-| `ship` | Ship a feature end-to-end |
-| `skillify` | Convert a workflow into a reusable skill |
-| `sync-gbrain` | Sync with gbrain knowledge base |
 
 ### Custom
 
