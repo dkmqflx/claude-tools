@@ -1,6 +1,6 @@
 # claude-tools
 
-A personal collection of Claude Code skills and reference documentation.
+A personal collection of Claude Code skills, subagents, and commands.
 
 ## Reference
 
@@ -15,8 +15,6 @@ A personal collection of Claude Code skills and reference documentation.
 
 Skills from [vercel.com/docs/agent-resources/skills](https://vercel.com/docs/agent-resources/skills).
 
-Install: `npx skills add vercel/<repo> --skill <name>`
-
 | Skill | Source | Description |
 |-------|--------|-------------|
 | `turborepo` | `vercel/turborepo` | Turborepo monorepo build system — task pipelines, caching, remote cache, `--filter`, CI optimization |
@@ -24,13 +22,9 @@ Install: `npx skills add vercel/<repo> --skill <name>`
 | `vercel-composition-patterns` | `vercel-labs/agent-skills` | React composition patterns — compound components, avoiding boolean prop proliferation, flexible component libraries |
 | `vercel-react-best-practices` | `vercel-labs/agent-skills` | React and Next.js performance optimization — 57 rules from Vercel Engineering covering rendering, data fetching, bundle size |
 
----
-
 ### LangChain / LangGraph
 
 Skills from [`langchain-ai/langchain-skills`](https://github.com/langchain-ai/langchain-skills).
-
-Install: `npx skills add langchain-ai/langchain-skills --skill '*'`
 
 #### LangChain
 
@@ -61,11 +55,9 @@ Install: `npx skills add langchain-ai/langchain-skills --skill '*'`
 | `managed-deep-agents` | LangSmith `/v1/deepagents` REST API — agent → MCP server → thread → streamed run flow |
 | `swarm` | Dispatch many independent items in parallel — fan out to subagents, aggregate results |
 
----
-
 ### Custom
 
-User-created skills for this project and general development workflows.
+User-created skills for general development workflows.
 
 | Skill | Description |
 |-------|-------------|
@@ -76,3 +68,26 @@ User-created skills for this project and general development workflows.
 | `grill-with-docs` | Stress-test a plan against the project's domain model and update documentation inline |
 | `improve-codebase-architecture` | Find architecture improvements and refactoring opportunities informed by `CONTEXT.md` and ADRs |
 | `to-prd` | Turn the current conversation context into a PRD and publish to the issue tracker |
+
+---
+
+## Subagents
+
+Custom subagents under `.claude/agents/`.
+
+| Agent | Description |
+|-------|-------------|
+| `fsd-async-reviewer` | Verify async files (`actions.ts`, `service.ts`, `query.ts`, `model/dto.ts`) in FSD slices follow conventions for Server Actions, TanStack Query, and DTO definitions |
+| `senior-code-reviewer` | Senior-level code review for new features, bug fixes, or refactoring — checks architecture compliance and project quality standards |
+| `test-writer` | Write test code for existing untested files at a given path, following `testing-patterns` conventions |
+
+---
+
+## Commands
+
+Slash commands under `.claude/commands/`.
+
+| Command | Description |
+|---------|-------------|
+| `done` | After opening a PR, delete the current feature branch and switch to the base branch |
+| `worktree-done` | Remove the current git worktree, switch the main checkout to the base branch, and delete the feature branch |
