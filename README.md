@@ -164,6 +164,7 @@ User-created skills for general development workflows.
 | `worktree` | Create a new git worktree on a fresh branch before starting work |
 | `fsd-scaffold` | Scaffold FSD (Feature-Sliced Design) folder structure for Next.js projects |
 | `testing-patterns` | Vitest + Testing Library patterns for Next.js/FSD projects |
+| `fastapi-best-practices` | FastAPI best practices — 41 rules across 13 categories (security, validation, dependencies, async, testing) with incorrect/correct examples linked to official docs |
 | `grill-with-docs` | Stress-test a plan against the project's domain model and update documentation inline |
 | `improve-codebase-architecture` | Find architecture improvements and refactoring opportunities informed by `CONTEXT.md` and ADRs |
 | `to-prd` | Turn the current conversation context into a PRD and publish to the issue tracker |
