@@ -9,13 +9,14 @@ A personal collection of Claude Code skills and reference documentation. No buil
 ## Structure
 
 ```
-md/        Reference documents (guidelines, patterns, notes)
-skills/    Claude Code custom skills (each skill is a self-contained directory)
+md/              Reference documents (guidelines, patterns, notes)
+.claude/skills/  All Claude Code skills (user-created and externally installed)
+skills-lock.json Lock file tracking externally installed skills (via npx skills add)
 ```
 
 ## Skills Format
 
-Each skill under `skills/` must have a `SKILL.md` with YAML frontmatter:
+Each skill under `.claude/skills/` must have a `SKILL.md` with YAML frontmatter:
 
 ```markdown
 ---
@@ -32,16 +33,23 @@ The `description` field is the most critical — it controls when Claude auto-ap
 
 ### Current Skills
 
-- **`skills/testing-patterns/`** — Vitest + Testing Library patterns for a Next.js/FSD project. Includes `template.md` (boilerplate), `examples/sample.md` (full worked example), and `scripts/validate.sh` (lints a test file against conventions).
-- **`skills/vercel-react-best-practices/`** — 57 React/Next.js performance rules from Vercel Engineering, organized in `rules/` by category prefix (`async-`, `bundle-`, `server-`, `client-`, `rerender-`, `rendering-`, `js-`, `advanced-`). `AGENTS.md` is the full compiled document; `SKILL.md` is the quick-reference index.
+- **`.claude/skills/testing-patterns/`** — Vitest + Testing Library patterns for a Next.js/FSD project. Includes `template.md` (boilerplate), `examples/sample.md` (full worked example), and `scripts/validate.sh` (lints a test file against conventions).
+- **`.claude/skills/vercel-react-best-practices/`** — 57 React/Next.js performance rules from Vercel Engineering, organized in `rules/` by category prefix (`async-`, `bundle-`, `server-`, `client-`, `rerender-`, `rendering-`, `js-`, `advanced-`). `AGENTS.md` is the full compiled document; `SKILL.md` is the quick-reference index.
+- **`.claude/skills/fsd-scaffold/`** — FSD structure scaffolding.
+- **`.claude/skills/commit-each/`** — Split git changes into one commit per logical unit of work.
+- **`.claude/skills/worktree/`** — Create a new git worktree on a fresh branch.
+- **`.claude/skills/turborepo/`** — Turborepo monorepo build system guidance. (installed via `npx skills add vercel/turborepo`)
+- **`.claude/skills/next-best-practices/`** — Next.js best practices. (installed via `npx skills add vercel-labs/next-skills`)
+- **`.claude/skills/vercel-composition-patterns/`** — Vercel composition patterns. (installed via `npx skills add vercel-labs/agent-skills`)
 
 ### Validate a test file against testing-patterns conventions
 
 ```bash
-bash skills/testing-patterns/scripts/validate.sh <path-to-test-file>
+bash .claude/skills/testing-patterns/scripts/validate.sh <path-to-test-file>
 ```
 
 ## Adding Content
 
-- **New skill**: create `skills/<name>/SKILL.md` with the frontmatter above, then add supporting files (`rules/`, `template.md`, `examples/`, etc.) as needed.
+- **New skill (user-created)**: create `.claude/skills/<name>/SKILL.md` with the frontmatter above, then add supporting files (`rules/`, `template.md`, `examples/`, etc.) as needed.
+- **External skill**: run `npx skills add <repo> [--skill <name>]` to install from GitHub into `.claude/skills/`; updates `skills-lock.json`.
 - **New reference doc**: add a Markdown file under `md/` and link it from `README.md`.
