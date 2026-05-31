@@ -74,6 +74,53 @@ Skills from [vercel.com/docs/agent-resources/skills](https://vercel.com/docs/age
 | `vercel-composition-patterns` | `vercel-labs/agent-skills` | React composition patterns — compound components, avoiding boolean prop proliferation, flexible component libraries |
 | `vercel-react-best-practices` | `vercel-labs/agent-skills` | React and Next.js performance optimization — 57 rules from Vercel Engineering covering rendering, data fetching, bundle size |
 
+### AWS
+
+Skills from [`aws/agent-toolkit-for-aws`](https://github.com/aws/agent-toolkit-for-aws) — AWS 공식.
+
+#### Core Skills
+
+| Skill | Description |
+|-------|-------------|
+| `amazon-bedrock` | Amazon Bedrock — foundation models, inference, fine-tuning |
+| `aws-amplify` | AWS Amplify — full-stack web and mobile app development |
+| `aws-billing-and-cost-management` | Cost Explorer, Budgets, billing alerts |
+| `aws-cdk` | AWS CDK — infrastructure as code with TypeScript/Python |
+| `aws-cloudformation` | CloudFormation — stack management, templates, change sets |
+| `aws-containers` | ECS, EKS, Fargate — container orchestration |
+| `aws-iam` | IAM — roles, policies, permissions, least privilege |
+| `aws-messaging-and-streaming` | SQS, SNS, EventBridge, Kinesis |
+| `aws-observability` | CloudWatch, X-Ray, logging and monitoring |
+| `aws-sdk-js-v3-usage` | AWS SDK for JavaScript v3 usage patterns |
+| `aws-sdk-python-usage` | AWS SDK for Python (boto3) usage patterns |
+| `aws-serverless` | Lambda, API Gateway, SAM — serverless architecture |
+
+#### Bedrock Agents
+
+| Skill | Description |
+|-------|-------------|
+| `agents-get-started` | Getting started with Amazon Bedrock Agents |
+| `agents-build` | Build and configure Bedrock Agents |
+| `agents-deploy` | Deploy Bedrock Agents to production |
+| `agents-connect` | Connect agents to data sources and APIs |
+| `agents-debug` | Debug and troubleshoot Bedrock Agents |
+| `agents-harden` | Security hardening for Bedrock Agents |
+| `agents-optimize` | Performance optimization for Bedrock Agents |
+
+#### Analytics / Data Lake
+
+| Skill | Description |
+|-------|-------------|
+| `connecting-to-data-source` | Connect to S3, RDS, Redshift, and other data sources |
+| `creating-data-lake-table` | Create and manage data lake tables |
+| `exploring-data-catalog` | Explore AWS Glue Data Catalog |
+| `finding-data-lake-assets` | Find and discover data lake assets |
+| `ingesting-into-data-lake` | Ingest data into S3-based data lakes |
+| `querying-data-lake` | Query data with Athena |
+| `storing-and-querying-vectors` | Vector storage and similarity search with OpenSearch |
+
+---
+
 ### LangChain / LangGraph
 
 Skills from [`langchain-ai/langchain-skills`](https://github.com/langchain-ai/langchain-skills).
