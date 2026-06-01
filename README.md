@@ -162,6 +162,8 @@ User-created skills for general development workflows.
 |-------|-------------|
 | `commit-each` | Split git changes into one commit per logical unit of work |
 | `worktree` | Create a new git worktree on a fresh branch before starting work |
+| `start-branch` | Create a new branch (from current position) with a `feat/fix/chore/…` name and switch to it |
+| `start-branch-from-dev` | Pull latest `dev`, then create a new branch from it with an appropriate name |
 | `fsd-scaffold` | Scaffold FSD (Feature-Sliced Design) folder structure for Next.js projects |
 | `testing-patterns` | Vitest + Testing Library patterns for Next.js/FSD projects |
 | `fastapi-best-practices` | FastAPI best practices — 41 rules across 13 categories (security, validation, dependencies, async, testing) with incorrect/correct examples linked to official docs |

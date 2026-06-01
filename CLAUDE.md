@@ -38,6 +38,8 @@ The `description` field is the most critical — it controls when Claude auto-ap
 - **`.claude/skills/fsd-scaffold/`** — FSD structure scaffolding.
 - **`.claude/skills/commit-each/`** — Split git changes into one commit per logical unit of work.
 - **`.claude/skills/worktree/`** — Create a new git worktree on a fresh branch.
+- **`.claude/skills/start-branch/`** — Create a new branch (current position) with an appropriate `feat/fix/chore/…` name and switch to it.
+- **`.claude/skills/start-branch-from-dev/`** — Pull the latest `dev`, then create a new branch from it with an appropriate name.
 - **`.claude/skills/turborepo/`** — Turborepo monorepo build system guidance. (installed via `npx skills add vercel/turborepo`)
 - **`.claude/skills/next-best-practices/`** — Next.js best practices. (installed via `npx skills add vercel-labs/next-skills`)
 - **`.claude/skills/vercel-composition-patterns/`** — Vercel composition patterns. (installed via `npx skills add vercel-labs/agent-skills`)
