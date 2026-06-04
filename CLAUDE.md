@@ -44,6 +44,23 @@ The `description` field is the most critical — it controls when Claude auto-ap
 - **`.claude/skills/next-best-practices/`** — Next.js best practices. (installed via `npx skills add vercel-labs/next-skills`)
 - **`.claude/skills/vercel-composition-patterns/`** — Vercel composition patterns. (installed via `npx skills add vercel-labs/agent-skills`)
 
+#### NestJS best practices
+
+Twelve user-created skills (90 rules) covering NestJS's major features, grounded in the official NestJS docs. Each follows the `vercel-react-best-practices` format: a `SKILL.md` index plus `rules/*.md` files with `title`/`impact`/`tags` frontmatter and incorrect/correct TypeScript examples.
+
+- **`.claude/skills/nestjs-modules-di/`** — Modules & dependency injection.
+- **`.claude/skills/nestjs-controllers/`** — Controllers & routing.
+- **`.claude/skills/nestjs-validation-pipes/`** — Validation & pipes.
+- **`.claude/skills/nestjs-guards-auth/`** — Guards, authentication & authorization.
+- **`.claude/skills/nestjs-interceptors/`** — Interceptors.
+- **`.claude/skills/nestjs-exception-filters/`** — Exception handling & filters.
+- **`.claude/skills/nestjs-config/`** — Configuration & env management.
+- **`.claude/skills/nestjs-database/`** — Database & ORM (TypeORM/Prisma/Mongoose).
+- **`.claude/skills/nestjs-caching-queues/`** — Caching & background-job queues (BullMQ).
+- **`.claude/skills/nestjs-testing/`** — Unit & e2e testing.
+- **`.claude/skills/nestjs-security/`** — Security hardening (helmet, throttler, CORS, CSRF).
+- **`.claude/skills/nestjs-performance-logging/`** — Performance & structured logging/observability.
+
 ### Validate a test file against testing-patterns conventions
 
 ```bash

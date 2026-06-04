@@ -74,6 +74,25 @@ Skills from [vercel.com/docs/agent-resources/skills](https://vercel.com/docs/age
 | `vercel-composition-patterns` | `vercel-labs/agent-skills` | React composition patterns — compound components, avoiding boolean prop proliferation, flexible component libraries |
 | `vercel-react-best-practices` | `vercel-labs/agent-skills` | React and Next.js performance optimization — 57 rules from Vercel Engineering covering rendering, data fetching, bundle size |
 
+### NestJS
+
+NestJS best practices — 12 skills (90 rules total) covering the framework's major features, grounded in the official [NestJS docs](https://docs.nestjs.com). Each rule follows the `vercel-react-best-practices` format: `impact`-tagged frontmatter + incorrect/correct TypeScript examples.
+
+| Skill | Description |
+|-------|-------------|
+| `nestjs-modules-di` | Modules & dependency injection — feature boundaries, provider scopes, dynamic modules, circular deps |
+| `nestjs-controllers` | Controllers & routing — thin controllers, DTOs, param decorators, serialization, versioning |
+| `nestjs-validation-pipes` | Validation & pipes — global `ValidationPipe`, whitelist, transform, class-validator, custom pipes |
+| `nestjs-guards-auth` | Guards, auth & authorization — Passport/JWT, global guard + `@Public()`, RBAC, password hashing |
+| `nestjs-interceptors` | Interceptors — response transform, logging, timeout, caching, global vs scoped binding |
+| `nestjs-exception-filters` | Exception handling & filters — built-in HTTP exceptions, global filters, consistent error shape |
+| `nestjs-config` | Configuration — global `ConfigModule`, env schema validation, typed/namespaced config |
+| `nestjs-database` | Database & ORM (TypeORM/Prisma/Mongoose) — repositories, migrations, transactions, N+1, pagination |
+| `nestjs-caching-queues` | Caching & queues — `CacheModule`, TTL/keys, BullMQ jobs, idempotent processors, retries |
+| `nestjs-testing` | Testing — `Test.createTestingModule`, mocking providers, e2e with supertest, guard overrides |
+| `nestjs-security` | Security hardening — helmet, throttler rate limiting, explicit CORS, CSRF, secrets, payload limits |
+| `nestjs-performance-logging` | Performance & logging — Fastify adapter, compression, structured pino logging, health checks, graceful shutdown |
+
 ### AWS
 
 Skills from [`aws/agent-toolkit-for-aws`](https://github.com/aws/agent-toolkit-for-aws) — AWS 공식.
