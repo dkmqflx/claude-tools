@@ -1,6 +1,6 @@
 # claude-tools
 
-A personal collection of Claude Code skills, subagents, and commands.
+A personal collection of Claude Code skills and subagents.
 
 ## Reference
 
@@ -197,6 +197,9 @@ User-created skills for general development workflows.
 | `worktree` | Create a new git worktree on a fresh branch before starting work |
 | `start-branch` | Create a new branch (from current position) with a `feat/fix/chore/…` name and switch to it |
 | `start-branch-from-dev` | Pull latest `dev`, then create a new branch from it with an appropriate name |
+| `open-pr` | Push the current branch and open a pull request against the detected base branch, with an AI-drafted title/body |
+| `branch-done` | After opening a PR, delete the current feature branch and switch back to the base branch |
+| `worktree-done` | Remove the current git worktree, switch the main checkout to the base branch, and delete the feature branch |
 | `fsd-scaffold` | Scaffold FSD (Feature-Sliced Design) folder structure for Next.js projects |
 | `testing-patterns` | Vitest + Testing Library patterns for Next.js/FSD projects |
 | `grill-with-docs` | Stress-test a plan against the project's domain model and update documentation inline |
@@ -214,14 +217,3 @@ Custom subagents under `.claude/agents/`.
 | `fsd-async-reviewer` | Verify async files (`actions.ts`, `service.ts`, `query.ts`, `model/dto.ts`) in FSD slices follow conventions for Server Actions, TanStack Query, and DTO definitions |
 | `senior-code-reviewer` | Senior-level code review for new features, bug fixes, or refactoring — checks architecture compliance and project quality standards |
 | `test-writer` | Write test code for existing untested files at a given path, following `testing-patterns` conventions |
-
----
-
-## Commands
-
-Slash commands under `.claude/commands/`.
-
-| Command | Description |
-|---------|-------------|
-| `done` | After opening a PR, delete the current feature branch and switch to the base branch |
-| `worktree-done` | Remove the current git worktree, switch the main checkout to the base branch, and delete the feature branch |

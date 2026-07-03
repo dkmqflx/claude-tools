@@ -40,6 +40,9 @@ The `description` field is the most critical — it controls when Claude auto-ap
 - **`.claude/skills/worktree/`** — Create a new git worktree on a fresh branch.
 - **`.claude/skills/start-branch/`** — Create a new branch (current position) with an appropriate `feat/fix/chore/…` name and switch to it.
 - **`.claude/skills/start-branch-from-dev/`** — Pull the latest `dev`, then create a new branch from it with an appropriate name.
+- **`.claude/skills/open-pr/`** — Push the current branch and open a pull request against the detected base branch, with an AI-drafted title/body confirmed by the user.
+- **`.claude/skills/branch-done/`** — After opening a PR, delete the current feature branch and switch back to the base branch.
+- **`.claude/skills/worktree-done/`** — Remove the current git worktree, switch the main checkout to the base branch, and delete the feature branch.
 - **`.claude/skills/turborepo/`** — Turborepo monorepo build system guidance. (installed via `npx skills add vercel/turborepo`)
 - **`.claude/skills/next-best-practices/`** — Next.js best practices. (installed via `npx skills add vercel-labs/next-skills`)
 - **`.claude/skills/vercel-composition-patterns/`** — Vercel composition patterns. (installed via `npx skills add vercel-labs/agent-skills`)
