@@ -93,6 +93,16 @@ NestJS best practices — 12 skills (90 rules total) covering the framework's ma
 | `nestjs-security` | Security hardening — helmet, throttler rate limiting, explicit CORS, CSRF, secrets, payload limits |
 | `nestjs-performance-logging` | Performance & logging — Fastify adapter, compression, structured pino logging, health checks, graceful shutdown |
 
+### FastAPI
+
+FastAPI best practices — 3 skills (41 rules total), grounded in the official [FastAPI docs](https://fastapi.tiangolo.com/). Security and testing are split into their own skills since they tend to live in dedicated files (auth modules, test suites) rather than alongside routing/model code.
+
+| Skill | Description |
+|-------|-------------|
+| `fastapi-best-practices` | Core guide — 33 rules across 11 categories: request/response models, params & validation, app structure & routing, DI, error handling, async, streaming, background tasks/config, lifespan, middleware, OpenAPI docs |
+| `fastapi-security` | Security & auth — `OAuth2PasswordBearer`, `get_current_user` dependency, router-level auth, password hashing, token endpoint |
+| `fastapi-testing` | Testing — `TestClient`, `dependency_overrides`, async `httpx` client |
+
 ### AWS
 
 Skills from [`aws/agent-toolkit-for-aws`](https://github.com/aws/agent-toolkit-for-aws) — AWS 공식.
@@ -185,7 +195,6 @@ User-created skills for general development workflows.
 | `start-branch-from-dev` | Pull latest `dev`, then create a new branch from it with an appropriate name |
 | `fsd-scaffold` | Scaffold FSD (Feature-Sliced Design) folder structure for Next.js projects |
 | `testing-patterns` | Vitest + Testing Library patterns for Next.js/FSD projects |
-| `fastapi-best-practices` | FastAPI best practices — 41 rules across 13 categories (security, validation, dependencies, async, testing) with incorrect/correct examples linked to official docs |
 | `grill-with-docs` | Stress-test a plan against the project's domain model and update documentation inline |
 | `improve-codebase-architecture` | Find architecture improvements and refactoring opportunities informed by `CONTEXT.md` and ADRs |
 | `to-prd` | Turn the current conversation context into a PRD and publish to the issue tracker |
