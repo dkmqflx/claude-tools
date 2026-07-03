@@ -78,6 +78,8 @@ Skills from [vercel.com/docs/agent-resources/skills](https://vercel.com/docs/age
 
 NestJS best practices — 12 skills (90 rules total) covering the framework's major features, grounded in the official [NestJS docs](https://docs.nestjs.com). Each rule follows the `vercel-react-best-practices` format: `impact`-tagged frontmatter + incorrect/correct TypeScript examples.
 
+> Published as a standalone plugin: [dkmqflx/nestjs-best-practices-plugin](https://github.com/dkmqflx/nestjs-best-practices-plugin) — installable via `/plugin marketplace add` (Claude Code) or `npx skills add` (Codex, Gemini CLI, Cursor, and more).
+
 | Skill | Description |
 |-------|-------------|
 | `nestjs-modules-di` | Modules & dependency injection — feature boundaries, provider scopes, dynamic modules, circular deps |
@@ -96,6 +98,8 @@ NestJS best practices — 12 skills (90 rules total) covering the framework's ma
 ### FastAPI
 
 FastAPI best practices — 3 skills (41 rules total), grounded in the official [FastAPI docs](https://fastapi.tiangolo.com/). Security and testing are split into their own skills since they tend to live in dedicated files (auth modules, test suites) rather than alongside routing/model code.
+
+> Published as a standalone plugin: [dkmqflx/fastapi-best-practices-plugin](https://github.com/dkmqflx/fastapi-best-practices-plugin) — installable via `/plugin marketplace add` (Claude Code) or `npx skills add` (Codex, Gemini CLI, Cursor, and more).
 
 | Skill | Description |
 |-------|-------------|
